@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"> <!-- Padding geral para dar mais espaçamento -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/txtTituloApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_500"
+                android:layout_gravity="center"
+                android:text="@string/txt_titulo"
+                android:textSize="22sp" />
+
+            <!-- Primeiro Nome -->
+            <EditText
+                android:id="@+id/editPrimeiroNome"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/txt_hint_edit_primeiro_nome"
+                android:importantForAutofill="no"
+                android:padding="12dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittext_background"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <!-- Sobrenome -->
+            <EditText
+                android:id="@+id/editSobreNomeAluno"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/txt_hint_edit_sobrenome"
+                android:padding="12dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittext_background"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <!-- Nome do Curso -->
+            <EditText
+                android:id="@+id/editNomeCurso"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/txt_hint_edit_nome_do_curso"
+                android:padding="12dp"
+                android:inputType="text"
+                android:background="@drawable/edittext_background"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <!-- Telefone de Contato -->
+            <EditText
+                android:id="@+id/editTelefoneContato"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/txt_hint_edit_telefone_contato"
+                android:padding="12dp"
+                android:inputType="phone"
+                android:background="@drawable/edittext_background"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_selecione_o_curso"
+                android:textSize="30dp"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:spinnerMode="dropdown"></Spinner>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLimpar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+
+                    android:text="@string/txt_button_limpar"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/btnSalvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/txt_button_salvar"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Button
+                android:id="@+id/btnFinalizar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt_button_finalizar"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
